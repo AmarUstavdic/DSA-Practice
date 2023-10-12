@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/dsa.dir/main.cpp.o -o dsa 
+/usr/bin/g++ -g -rdynamic CMakeFiles/dsa.dir/main.cpp.o -o dsa   -L/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build  -Wl,-rpath,/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build -lMyDSALibrary 

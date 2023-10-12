@@ -57,33 +57,13 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lilwizzz/Devops/DSA-Practice
+CMAKE_SOURCE_DIR = /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lilwizzz/Devops/DSA-Practice/build
+CMAKE_BINARY_DIR = /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/usr/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/lilwizzz/Devops/DSA-Practice/build/CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -107,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilwizzz/Devops/DSA-Practice/build/CMakeFiles /home/lilwizzz/Devops/DSA-Practice/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build/CMakeFiles /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilwizzz/Devops/DSA-Practice/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -137,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dsa
+# Target rules for targets named MyDSALibrary
 
 # Build rule for target.
-dsa: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dsa
-.PHONY : dsa
+MyDSALibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyDSALibrary
+.PHONY : MyDSALibrary
 
 # fast build rule for target.
-dsa/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/build
-.PHONY : dsa/fast
+MyDSALibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/build
+.PHONY : MyDSALibrary/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+UnorderedList.o: UnorderedList.cpp.o
+.PHONY : UnorderedList.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/main.cpp.o
-.PHONY : main.cpp.o
+UnorderedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o
+.PHONY : UnorderedList.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+UnorderedList.i: UnorderedList.cpp.i
+.PHONY : UnorderedList.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/main.cpp.i
-.PHONY : main.cpp.i
+UnorderedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.i
+.PHONY : UnorderedList.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+UnorderedList.s: UnorderedList.cpp.s
+.PHONY : UnorderedList.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/main.cpp.s
-.PHONY : main.cpp.s
+UnorderedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.s
+.PHONY : UnorderedList.cpp.s
 
 # Help Target
 help:
@@ -180,13 +160,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... package"
-	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... dsa"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... MyDSALibrary"
+	@echo "... UnorderedList.o"
+	@echo "... UnorderedList.i"
+	@echo "... UnorderedList.s"
 .PHONY : help
 
 
