@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o"
+  "CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o.d"
   "CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o"
   "CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o.d"
   "libMyDSALibrary.a"

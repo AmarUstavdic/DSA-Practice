@@ -129,6 +129,30 @@ MyDSALibrary/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/build
 .PHONY : MyDSALibrary/fast
 
+OrderedList/OrderedList.o: OrderedList/OrderedList.cpp.o
+.PHONY : OrderedList/OrderedList.o
+
+# target to build an object file
+OrderedList/OrderedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o
+.PHONY : OrderedList/OrderedList.cpp.o
+
+OrderedList/OrderedList.i: OrderedList/OrderedList.cpp.i
+.PHONY : OrderedList/OrderedList.i
+
+# target to preprocess a source file
+OrderedList/OrderedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.i
+.PHONY : OrderedList/OrderedList.cpp.i
+
+OrderedList/OrderedList.s: OrderedList/OrderedList.cpp.s
+.PHONY : OrderedList/OrderedList.s
+
+# target to generate assembly for a file
+OrderedList/OrderedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.s
+.PHONY : OrderedList/OrderedList.cpp.s
+
 UnorderedList/UnorderedList.o: UnorderedList/UnorderedList.cpp.o
 .PHONY : UnorderedList/UnorderedList.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyDSALibrary"
+	@echo "... OrderedList/OrderedList.o"
+	@echo "... OrderedList/OrderedList.i"
+	@echo "... OrderedList/OrderedList.s"
 	@echo "... UnorderedList/UnorderedList.o"
 	@echo "... UnorderedList/UnorderedList.i"
 	@echo "... UnorderedList/UnorderedList.s"

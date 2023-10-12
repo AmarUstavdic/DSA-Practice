@@ -4,7 +4,7 @@ project(MyDSALibrary)
 
 set(SOURCE_FILES
     UnorderedList/UnorderedList.cpp 
-    
+    OrderedList/OrderedList.cpp
 )
 
 add_library(MyDSALibrary STATIC ${SOURCE_FILES})

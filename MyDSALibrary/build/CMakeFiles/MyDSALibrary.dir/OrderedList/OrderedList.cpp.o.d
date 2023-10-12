@@ -1,5 +1,7 @@
-CMakeFiles/dsa.dir/main.cpp.o: \
- /home/lilwizzz/Devops/DSA-Practice/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o: \
+ /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/OrderedList/OrderedList.cpp \
+ /usr/include/stdc-predef.h \
+ /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/OrderedList/OrderedList.hpp \
  /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -147,5 +149,4 @@ CMakeFiles/dsa.dir/main.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc \
- /home/lilwizzz/Devops/DSA-Practice/./MyDSALibrary/OrderedList/OrderedList.hpp
+ /usr/include/c++/12/bits/istream.tcc
