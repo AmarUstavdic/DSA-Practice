@@ -69,28 +69,28 @@ include CMakeFiles/MyDSALibrary.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyDSALibrary.dir/flags.make
 
-CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o: CMakeFiles/MyDSALibrary.dir/flags.make
-CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o: /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList.cpp
-CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o: CMakeFiles/MyDSALibrary.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o -MF CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o.d -o CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o -c /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList.cpp
+CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: CMakeFiles/MyDSALibrary.dir/flags.make
+CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList/UnorderedList.cpp
+CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: CMakeFiles/MyDSALibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o -MF CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o.d -o CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o -c /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList/UnorderedList.cpp
 
-CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList.cpp > CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.i
+CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList/UnorderedList.cpp > CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.i
 
-CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList.cpp -o CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.s
+CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList/UnorderedList.cpp -o CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.s
 
 # Object files for target MyDSALibrary
 MyDSALibrary_OBJECTS = \
-"CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o"
+"CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o"
 
 # External object files for target MyDSALibrary
 MyDSALibrary_EXTERNAL_OBJECTS =
 
-libMyDSALibrary.a: CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o
+libMyDSALibrary.a: CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o
 libMyDSALibrary.a: CMakeFiles/MyDSALibrary.dir/build.make
 libMyDSALibrary.a: CMakeFiles/MyDSALibrary.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libMyDSALibrary.a"

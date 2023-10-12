@@ -129,29 +129,29 @@ MyDSALibrary/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/build
 .PHONY : MyDSALibrary/fast
 
-UnorderedList.o: UnorderedList.cpp.o
-.PHONY : UnorderedList.o
+UnorderedList/UnorderedList.o: UnorderedList/UnorderedList.cpp.o
+.PHONY : UnorderedList/UnorderedList.o
 
 # target to build an object file
-UnorderedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o
-.PHONY : UnorderedList.cpp.o
+UnorderedList/UnorderedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o
+.PHONY : UnorderedList/UnorderedList.cpp.o
 
-UnorderedList.i: UnorderedList.cpp.i
-.PHONY : UnorderedList.i
+UnorderedList/UnorderedList.i: UnorderedList/UnorderedList.cpp.i
+.PHONY : UnorderedList/UnorderedList.i
 
 # target to preprocess a source file
-UnorderedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.i
-.PHONY : UnorderedList.cpp.i
+UnorderedList/UnorderedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.i
+.PHONY : UnorderedList/UnorderedList.cpp.i
 
-UnorderedList.s: UnorderedList.cpp.s
-.PHONY : UnorderedList.s
+UnorderedList/UnorderedList.s: UnorderedList/UnorderedList.cpp.s
+.PHONY : UnorderedList/UnorderedList.s
 
 # target to generate assembly for a file
-UnorderedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.s
-.PHONY : UnorderedList.cpp.s
+UnorderedList/UnorderedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.s
+.PHONY : UnorderedList/UnorderedList.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyDSALibrary"
-	@echo "... UnorderedList.o"
-	@echo "... UnorderedList.i"
-	@echo "... UnorderedList.s"
+	@echo "... UnorderedList/UnorderedList.o"
+	@echo "... UnorderedList/UnorderedList.i"
+	@echo "... UnorderedList/UnorderedList.s"
 .PHONY : help
 
 

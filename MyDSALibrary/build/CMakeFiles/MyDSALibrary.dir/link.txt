@@ -1,2 +1,2 @@
-/usr/bin/ar qc libMyDSALibrary.a CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o
+/usr/bin/ar qc libMyDSALibrary.a CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o
 /usr/bin/ranlib libMyDSALibrary.a

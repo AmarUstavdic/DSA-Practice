@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList.cpp" "CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o" "gcc" "CMakeFiles/MyDSALibrary.dir/UnorderedList.cpp.o.d"
+  "/home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/UnorderedList/UnorderedList.cpp" "CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o" "gcc" "CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o.d"
   )
 
 # Targets to which this target links.
