@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lilwizzz/Devops/DSA-Practice/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/dsa.dir/main.cpp.o -c /home/lilwizzz/Devops/DSA-Practice/main.cpp",
+  "file": "/home/lilwizzz/Devops/DSA-Practice/main.cpp"
+}
+]
