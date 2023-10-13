@@ -1,7 +1,3 @@
-Certainly! Here's an improved README for your DSA repository:
-
----
-
 # Data Structures and Algorithms - Hands-On Learning
 
 Welcome to my central hub for university coursework on Data Structures and Algorithms (DSA). This repository is a place for me to implement data structures and algorithms from scratch, mainly ones that are covered by my university course on Data Structures and Algorithms, fostering a deeper understanding of these fundamental concepts. Just to make things a bit more interesting I took another challange here which is all the code is going to be written in C++, just for the sake of learning that language since it is not covered by any course at the university where I am studing currently.
