@@ -129,6 +129,30 @@ MyDSALibrary/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/build
 .PHONY : MyDSALibrary/fast
 
+BinarySearchTree/BinarySearchTree.o: BinarySearchTree/BinarySearchTree.cpp.o
+.PHONY : BinarySearchTree/BinarySearchTree.o
+
+# target to build an object file
+BinarySearchTree/BinarySearchTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.o
+
+BinarySearchTree/BinarySearchTree.i: BinarySearchTree/BinarySearchTree.cpp.i
+.PHONY : BinarySearchTree/BinarySearchTree.i
+
+# target to preprocess a source file
+BinarySearchTree/BinarySearchTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.i
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.i
+
+BinarySearchTree/BinarySearchTree.s: BinarySearchTree/BinarySearchTree.cpp.s
+.PHONY : BinarySearchTree/BinarySearchTree.s
+
+# target to generate assembly for a file
+BinarySearchTree/BinarySearchTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyDSALibrary.dir/build.make CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.s
+.PHONY : BinarySearchTree/BinarySearchTree.cpp.s
+
 OrderedList/OrderedList.o: OrderedList/OrderedList.cpp.o
 .PHONY : OrderedList/OrderedList.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyDSALibrary"
+	@echo "... BinarySearchTree/BinarySearchTree.o"
+	@echo "... BinarySearchTree/BinarySearchTree.i"
+	@echo "... BinarySearchTree/BinarySearchTree.s"
 	@echo "... OrderedList/OrderedList.o"
 	@echo "... OrderedList/OrderedList.i"
 	@echo "... OrderedList/OrderedList.s"

@@ -1,29 +1,35 @@
 #include <iostream>
 //#include "./MyDSALibrary/UnorderedList/UnorderedList.hpp"
-#include "./MyDSALibrary/OrderedList/OrderedList.hpp"
+//#include "./MyDSALibrary/OrderedList/OrderedList.hpp"
+#include "./MyDSALibrary/BinarySearchTree/BinarySearchTree.hpp"
+#include <vector>
+
+
 using namespace std;
+
 
 
 int main(){
 
-    OrderedList ol;
+    BinarySearchTree bst;
 
-    int N = 10, range = 20, min = 1;
-    for (int i = 0; i < N; i++) {
-        int random_number = rand() % range + min;
-        cout << random_number << " ";
-        ol.insert(random_number);
+    for (int i = 0; i < 1; i++) {
+        //int rnd = rand() % 20;
+        bst.insert(i);
     }
-    cout << endl;
-    
-    ol.print();
 
+    bst.preorder();
+    bst.inorder();
 
-    for (int i = 0; i < N; i++) cout << "find(" << i << "): " << boolalpha << ol.find(i) << endl; 
+    vector<int> v;
+    bst.preorder_v(v);
 
-    cout << "Deleting: " << endl;
-    for (int i = 0; i < N; i++) cout << "remove(" << i << "): " << boolalpha << ol.remove(i) << endl; 
-    
+    // reconstructing a tree
+    BinarySearchTree reconstructedBst;
+    for (int n : v) reconstructedBst.insert(n);
+    reconstructedBst.preorder();
+
+    cout << "Height: " << bst.height() << endl;
 
 
 

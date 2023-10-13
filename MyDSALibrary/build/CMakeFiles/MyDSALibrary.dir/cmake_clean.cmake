@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o"
+  "CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o.d"
   "CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o"
   "CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o.d"
   "CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o"

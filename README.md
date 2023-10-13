@@ -4,19 +4,17 @@ Welcome to my central hub for university coursework on Data Structures and Algor
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [Current Projects](#currently-working-on)
+- [Currently Working On](#currently-working-on)
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
 In the world of computer science and programming, a solid grasp of data structures and algorithms is essential. This repository serves as a practical resource to supplement my university DSA coursework. By building data structures and implementing algorithms from the ground up, I aim to gain a comprehensive understanding of these foundational concepts.
 
 ## Currently Working On
-- Ordered List
 - Binary Search Tree (BST)
 
 
@@ -25,9 +23,24 @@ In the world of computer science and programming, a solid grasp of data structur
 
 - **Linked Lists:**
     - Unordered List
+        - [`insert(int key)`](/MyDSALibrary/UnorderedList/UnorderedList.cpp/#L14)
+        - [`find(int key)`](/MyDSALibrary/UnorderedList/UnorderedList.cpp/#L21)
+        - [`remove(int key)`](/MyDSALibrary/UnorderedList/UnorderedList.cpp/#L30)
+        - `print()`
     - Ordered List
+        - `insert(int key)`
+        - `find(int key)`
+        - `remove(int key)`
+        - `print()`
 - **Binary Trees:**
     - Binary Search Tree (BST)
+        - `insert(int key)`
+        - `find(int key)`
+        - `remove(int key)` to be implemented
+        - `preorder()`
+        - `inorder()`
+        - `postorder()` to be implemented
+        - `height()`
 
 ## Algorithms
 
