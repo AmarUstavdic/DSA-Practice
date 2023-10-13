@@ -46,21 +46,30 @@ bool OrderedList::remove(int key) {
     if (head == nullptr) return false;
     if (head->key == key) {
         Node* temp = head;
-        head = temp->tail;
+        head = head->tail;
         delete temp;
         return true;
     }
     Node* current = head;
-    while (current->tail != nullptr) {
-        if (current->tail->key == key) {
-            Node* temp = current->tail;
-            current->tail = current->tail->tail;
-            delete temp;
+    Node* previous = nullptr;
+    while (current != nullptr) {
+        if (current->key == key) {
+            previous->tail = current->tail;
+            delete current;
             return true;
+        } else if (current->key > key) {
+            /* 
+                This list is ordered, so in the event of encoutering the key
+                that is grater than the key that we want to remove, we can simply
+                stop at this point since this means that our key does not
+                exist in our data structure.
+            */
+            return false;
         }
+        previous = current;
         current = current->tail;
     }
-    return false;
+    return false;  // We came to the end of the list, no matching key found, so return false
 }
 
 void OrderedList::print() {
