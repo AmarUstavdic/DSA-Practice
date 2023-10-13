@@ -13,9 +13,9 @@ int main(){
 
     BinarySearchTree bst;
 
-    for (int i = 0; i < 1; i++) {
-        //int rnd = rand() % 20;
-        bst.insert(i);
+    for (int i = 0; i < 29; i++) {
+        int rnd = rand() % 30;
+        bst.insert(rnd);
     }
 
     bst.preorder();
@@ -31,6 +31,8 @@ int main(){
 
     cout << "Height: " << bst.height() << endl;
 
+
+    //cout << "find(" << bst.find(10) << ")" << endl;
 
 
     return 0;    

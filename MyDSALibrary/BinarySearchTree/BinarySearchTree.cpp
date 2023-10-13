@@ -50,7 +50,7 @@ void BinarySearchTree::insert(int key) {
     } 
 }
 
-// since my implementationt does not allow duplicate keys, code bellow works
+// this needs to be fixed!!!!
 bool BinarySearchTree::find(int key) {
     Node* current = root;
     while(current) {
@@ -62,7 +62,7 @@ bool BinarySearchTree::find(int key) {
 }
 
 bool BinarySearchTree::remove(int key) {
-    
+
     return false;
 }
 
