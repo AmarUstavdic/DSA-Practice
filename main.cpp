@@ -53,6 +53,13 @@ int main(){
 
     cout << "REVERSE INORDER: " ; bst.iterReverseInorder();
 
+    cout << boolalpha << bst.find(28) << endl;
+    cout << boolalpha << bst.find(-1) << endl;
+    cout << boolalpha << bst.find(4) << endl;
+    cout << boolalpha << bst.find(23) << endl;
+    cout << boolalpha << bst.find(19) << endl;
+    cout << boolalpha << bst.find(2) << endl;
+
 
 
     return 0;    

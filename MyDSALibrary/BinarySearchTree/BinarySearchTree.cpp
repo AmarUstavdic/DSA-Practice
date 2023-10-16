@@ -52,16 +52,34 @@ void BinarySearchTree::insert(int key) {
     } 
 }
 
-// this needs to be fixed!!!!
+
+
 bool BinarySearchTree::find(int key) {
     Node* current = root;
-    while(current) {
-        if (key == current->key) return true;
-        if (key < current->key) current = current->left;
-        if (key > current->key) current = current->right;
+    while (current) {
+        if (key == current->key) {
+            return true;
+        } else {
+            if (key < current->key) {
+                if (current->left) {
+                    current = current->left;
+                } else {
+                    return false;
+                }
+            } else {
+                if (current->right) {
+                    current = current->right;
+                } else {
+                    return false;
+                }
+            }
+        }
     }
     return false;
 }
+
+
+
 
 bool BinarySearchTree::remove(int key) {
 
@@ -264,6 +282,7 @@ void BinarySearchTree::iterReverseInorder() {
 		std::cout << current->key << " ";
 		current = current->left;
 	}
+    std::cout << std::endl;
 }
 
 
