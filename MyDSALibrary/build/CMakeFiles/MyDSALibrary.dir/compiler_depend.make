@@ -189,7 +189,16 @@ CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o: /home/lilwi
   /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
-  /usr/include/c++/12/bits/istream.tcc
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/stack \
+  /usr/include/c++/12/deque \
+  /usr/include/c++/12/bits/stl_deque.h \
+  /usr/include/c++/12/bits/deque.tcc \
+  /usr/include/c++/12/bits/stl_stack.h \
+  /usr/include/c++/12/bits/uses_allocator.h \
+  /usr/include/c++/12/queue \
+  /usr/include/c++/12/bits/stl_heap.h \
+  /usr/include/c++/12/bits/stl_queue.h
 
 CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o: /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/OrderedList/OrderedList.cpp \
   /usr/include/stdc-predef.h \
@@ -566,6 +575,14 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 
 /home/lilwizzz/Devops/DSA-Practice/MyDSALibrary/OrderedList/OrderedList.cpp:
 
+/usr/include/c++/12/bits/stl_heap.h:
+
+/usr/include/c++/12/queue:
+
+/usr/include/c++/12/deque:
+
+/usr/include/c++/12/stack:
+
 /usr/include/c++/12/bits/basic_ios.tcc:
 
 /usr/include/c++/12/cwctype:
@@ -621,6 +638,8 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/12/cstdlib:
+
+/usr/include/c++/12/bits/stl_deque.h:
 
 /usr/include/c++/12/ext/string_conversions.h:
 
@@ -689,6 +708,8 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/12/ios:
+
+/usr/include/c++/12/bits/deque.tcc:
 
 /usr/include/c++/12/bits/new_allocator.h:
 
@@ -802,6 +823,8 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
+/usr/include/c++/12/bits/stl_stack.h:
+
 /usr/include/c++/12/pstl/pstl_config.h:
 
 /usr/include/c++/12/ext/numeric_traits.h:
@@ -833,6 +856,8 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
+
+/usr/include/c++/12/bits/uses_allocator.h:
 
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
 
@@ -901,6 +926,8 @@ CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o: /home/lilwizzz/De
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h:
+
+/usr/include/c++/12/bits/stl_queue.h:
 
 /usr/include/c++/12/iostream:
 

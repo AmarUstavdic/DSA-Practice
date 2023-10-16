@@ -1,6 +1,8 @@
 #include "BinarySearchTree.hpp"
 #include <iostream>
 #include <vector>
+#include <stack>
+#include <queue>
 
 BinarySearchTree::BinarySearchTree() : root(nullptr) {}
 
@@ -68,6 +70,30 @@ bool BinarySearchTree::remove(int key) {
 
 
 
+
+
+void BinarySearchTree::iterPreorder() {
+    if (!root) return;
+
+    std::stack<Node*> s;
+    s.push(root);
+
+    while (!s.empty()) {
+        Node* current = s.top();
+        s.pop();
+
+        std::cout << current->key << " ";
+
+        if (current->right) s.push(current->right);
+        if (current->left) s.push(current->left);
+    }
+    std::cout << std::endl;
+}
+
+
+
+
+
 void BinarySearchTree::preorder() {
     std::cout << "PREORDER: ";
     recPreorder(root);
@@ -95,6 +121,33 @@ void BinarySearchTree::recPreorder(std::vector<int>& v, Node* node) {
 }
 
 
+
+
+
+
+
+void BinarySearchTree::iterInorder() {
+    std::stack<Node*> s;
+    Node* current = root;
+
+    while (!s.empty() || current) {
+        while (current) {
+            s.push(current);
+            current = current->left;
+        }
+
+        current = s.top();
+        s.pop();
+
+        std::cout << current->key << " ";
+
+        current = current->right;
+    }
+    std::cout << std::endl;
+}
+
+
+
 void BinarySearchTree::inorder() {
     std::cout << "INORDER: ";
     recInorder(root);
@@ -108,6 +161,114 @@ void BinarySearchTree::recInorder(Node* node) {
         recInorder(node->right);
     }
 }
+
+
+
+
+
+
+void BinarySearchTree::iterPostorder() {
+    std::stack<Node*> s;
+    Node* current = root;
+    Node* lastVisited = nullptr;
+
+    while (!s.empty() || current) {
+        if (current) {
+            s.push(current);
+            current = current->left;
+        } else {
+            Node* peekNode = s.top();
+            if (peekNode->right && lastVisited != peekNode->right) {
+                current = peekNode->right;
+            } else {
+                std::cout << peekNode->key << " ";
+                lastVisited = peekNode;
+                s.pop();
+            }
+        }
+    }
+    std::cout << std::endl;
+}
+
+
+void BinarySearchTree::postorder() {
+    std::cout << "POSTORDER: ";
+    recPostorder(root);
+    std::cout << std::endl;
+}
+
+void BinarySearchTree::recPostorder(Node* node) {
+    if (node) {
+        recPostorder(node->left);
+        recPostorder(node->right);
+        std::cout << node->key << " ";
+    }
+}
+
+
+
+void BinarySearchTree::levelOrder() {
+    if (!root) return;
+    std::queue<Node*> q;
+    q.push(root);
+    
+    while (!q.empty()) {
+        int nodesAtCurrentLevel = q.size();
+        
+        for (int i = 0; i < nodesAtCurrentLevel; ++i) {
+            Node* current = q.front();
+            q.pop();
+            
+            std::cout << current->key << " ";
+            
+            if (current->left) q.push(current->left);
+            if (current->right) q.push(current->right);
+        }
+        
+        std::cout << std::endl;  // Print a newline after each level
+    }
+}
+
+
+
+
+
+
+void BinarySearchTree::reverseInorder() {
+    std::cout << "REVERSE INORDER: ";
+    recRevInorder(root);
+    std::cout << std::endl;
+}
+
+void BinarySearchTree::recRevInorder(Node* node) {
+    if (node) {
+        recRevInorder(node->right);
+        std::cout << node->key << " ";
+        recRevInorder(node->left);
+    }
+}
+
+
+
+void BinarySearchTree::iterReverseInorder() {
+	std::stack<Node*> s;
+	Node* current = root;
+	while (!s.empty() || current) {
+		while (current) {
+			s.push(current);
+			current = current->right;
+		}
+		current = s.top();
+		s.pop();
+		
+		std::cout << current->key << " ";
+		current = current->left;
+	}
+}
+
+
+
+
 
 
 

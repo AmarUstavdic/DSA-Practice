@@ -23,7 +23,16 @@ public:
     void preorder();
     void inorder();
     void postorder();
+
+    void iterPreorder();
+    void iterInorder();
+    void iterPostorder();
+
     void preorder_v(std::vector<int>& v);
+
+    void levelOrder();
+    void reverseInorder();
+    void iterReverseInorder();
 
     int height();
 
@@ -36,6 +45,8 @@ private:
     void recInorder(Node* node);
     void recPostorder(Node* node);
     void recPreorder(std::vector<int>& v, Node* node);
+
+    void recRevInorder(Node* node);
 
     int recHeight(Node* node);
 

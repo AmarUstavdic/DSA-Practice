@@ -29,10 +29,30 @@ int main(){
     for (int n : v) reconstructedBst.insert(n);
     reconstructedBst.preorder();
 
+
+    bst.postorder();
+
+
+    cout << endl;
+
+    cout << "PREORDER: "; bst.iterPreorder();
+    cout << "INORDER: " ; bst.iterInorder();
+    cout << "POSTORDER: "; bst.iterPostorder();
+
+
+    cout << endl;
     cout << "Height: " << bst.height() << endl;
 
 
-    //cout << "find(" << bst.find(10) << ")" << endl;
+
+    cout << "Level order: "; bst.levelOrder();
+
+
+    bst.reverseInorder();
+
+
+    cout << "REVERSE INORDER: " ; bst.iterReverseInorder();
+
 
 
     return 0;    

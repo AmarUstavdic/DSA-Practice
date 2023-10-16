@@ -151,4 +151,8 @@ CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o: \
  /usr/include/c++/12/bits/locale_facets.tcc \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
- /usr/include/c++/12/bits/istream.tcc
+ /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/stack \
+ /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
+ /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_stack.h \
+ /usr/include/c++/12/bits/uses_allocator.h /usr/include/c++/12/queue \
+ /usr/include/c++/12/bits/stl_heap.h /usr/include/c++/12/bits/stl_queue.h
