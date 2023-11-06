@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyDSALibrary.a CMakeFiles/MyDSALibrary.dir/UnorderedList/UnorderedList.cpp.o CMakeFiles/MyDSALibrary.dir/OrderedList/OrderedList.cpp.o CMakeFiles/MyDSALibrary.dir/BinarySearchTree/BinarySearchTree.cpp.o
+/usr/bin/ranlib libMyDSALibrary.a

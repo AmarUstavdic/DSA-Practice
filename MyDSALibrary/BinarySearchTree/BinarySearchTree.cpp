@@ -83,9 +83,50 @@ bool BinarySearchTree::find(int key) {
 
 bool BinarySearchTree::remove(int key) {
     
-    return false;
-}
+    if (!root) return false;
 
+    Node* parent = nullptr;
+    Node* current = root;
+    // First, find the node to remove and its parent
+    while (current != nullptr && current->key != key) {
+        parent = current;
+        if (key < current->key) {
+            current = current->left;
+        } else {
+            current = current->right;
+        }
+    }
+
+    if (!current) return false; // Node with the given key doesn't exist
+
+    // Case 1: Node with two children
+    if (current->left && current->right) {
+        // Find the in-order successor
+        Node* successorParent = current;
+        Node* successor = current->right;
+        while (successor->left != nullptr) {
+            successorParent = successor;
+            successor = successor->left;
+        }
+        current->key = successor->key;
+        current = successor;
+        parent = successorParent;
+    }
+
+    // Case 2 & 3: Node with zero or one child
+    Node* child = (current->left) ? current->left : current->right;
+    if (current != root) {
+        if (parent->left == current) {
+            parent->left = child;
+        } else {
+            parent->right = child;
+        }
+    } else {
+        root = child; // If it's root, the child becomes the new root
+    }
+    delete current; // Delete the node from the memory
+    return true;
+}
 
 
 

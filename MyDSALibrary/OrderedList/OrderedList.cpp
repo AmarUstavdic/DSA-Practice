@@ -16,14 +16,14 @@ void OrderedList::insert(int key) {
     node->key = key;
     node->tail = nullptr;
 
-    if (head == nullptr || head->key >= key) {
+    if (!head || head->key >= key) {
         node->tail = head;
         head = node;
         return;
     }
 
     Node* current = head;
-    while (current->tail != nullptr && current->tail->key < key) {
+    while (current->tail && current->tail->key < key) {
         current = current->tail;
     }
 
